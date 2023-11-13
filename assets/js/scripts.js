@@ -2,7 +2,6 @@ const searchInput = document.getElementById('search-input')
 const searchBtn = document.getElementById('search-btn')
 const movieSectionEl = document.getElementById('movie-section')
 const key = ''
-const watchList = JSON.parse(localStorage.getItem('watchlist'))
 
 searchBtn.addEventListener('click', getMovies)
 
