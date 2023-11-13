@@ -4,26 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie Finder</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Movie Finder</title>
 </head>
 
 <body>
   <div class="container">
     <header>
-      <div class="image-container">
-        <h1>Find your film</h1>
-        <h4>My Watchlist</h4>
-        <input type="text" placeholder="Blade Runner">
+      <div class="header-image-wrapper">
+        <div class="header-text-wrapper">
+          <h1>Find your film</h1>
+          <h4><a class="watchlist-link" href="/watchlist.html">My Watchlist</a></h4>
+        </div>
+
+        <div class="input-wrapper">
+          <div class="icon-wrapper">
+            <img src="./assets/images/search-icon.svg" alt="search icon">
+          </div>
+          <input id="search-input" type="text" placeholder="Blade Runner">
+          <button class="search-btn" id="search-btn">Search</button>
+        </div>
       </div>
     </header>
 
     <main>
-      <section id="movie-section">
-        <img src="./assets/images/movie.svg" alt="">
-        <h3>Start exploring</h3>
+      <section class="movie-section" id="movie-section">
+        <div class="placeholder-img-wrapper">
+          <img src="./assets/images/movie.svg" alt="">
+          <h3>Start exploring</h3>
+        </div>
       </section>
+
+      <div id="custom-alert-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="custom-alert-message"></p>
+        </div>
+      </div>
     </main>
   </div>
 

@@ -1,0 +1,279 @@
+:root {
+  --background: #121212;
+  --searchBar: #2E2E2F;
+  --searchBtn: #4B4B4B;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Inter', sans-serif;
+  background-color: #1C1C1C;
+
+}
+
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: var(--background);
+}
+
+.header-image-wrapper {
+  background-image: url('../images/header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 208px;
+}
+
+h1 {
+  font-size: 2.673rem;
+  color: #FFF;
+}
+
+h3 {
+  font-size: 1.125rem;
+  color: #2E2E2F;
+}
+
+h4 {
+  font-size: 0.875rem;
+  color: #FFF;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+.header-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-text-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-wrapper {
+  background-color: var(--searchBar);
+  height: 38px;
+  width: 36px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.icon-wrapper>img {
+  width: 20px;
+  height: 20px;
+}
+
+.input-wrapper>input,
+.input-wrapper>button {
+  height: 38px;
+  border: none;
+}
+
+.input-wrapper>input {
+  box-sizing: border-box;
+  width: 342px;
+  padding: 0 0 0 10px;
+  background-color: var(--searchBar);
+  font-family: 'Inter', sans-serif;
+  color: #FFF;
+}
+
+.input-wrapper>input::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.input-wrapper>button {
+  width: 120px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: var(--searchBtn);
+  color: #FFF;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #5b5b5c;
+}
+
+.movie-section {
+  height: auto;
+  width: 550px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.placeholder-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 300px;
+  padding: 80px;
+}
+
+.movies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  max-width: 500px;
+  border-bottom: 1px solid #eee;
+
+  color: #fff;
+}
+
+.movie-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.movie-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 25px;
+}
+
+.movie-title-wrapper>h3 {
+  font-size: 1.125rem;
+  color: #FFF;
+  font-weight: 500;
+}
+
+.movie-info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 8px 0;
+}
+
+.watchlist-button {
+  display: flex;
+  gap: 5px;
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  align-items: center;
+}
+
+.watchlist-button>p {
+  margin: 0;
+}
+
+.watchlist-button:hover {
+  filter: brightness(.7);
+  cursor: pointer;
+}
+
+.watchlist-link,
+.watchlist-link:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.watchlist-link:hover {
+  color: #ff4444;
+}
+
+.add-icon {
+  width: 16px;
+}
+
+.imdb {
+  display: flex;
+  align-items: center;
+}
+
+.imdb>p {
+  font-size: 0.75rem;
+}
+
+.star-icon {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 1px;
+  margin-right: 4px;
+}
+
+.poster {
+  width: 100px;
+}
+
+.plot-text {
+  font-size: 0.875rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: #A5A5A5;
+  margin-top: 0;
+}
+
+
+/* Custom alert */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #121212;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  width: 50%;
+  text-align: center;
+  color: #FFF;
+}
+
+.close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #4B4B4B;
+  text-decoration: none;
+  cursor: pointer;
+}
