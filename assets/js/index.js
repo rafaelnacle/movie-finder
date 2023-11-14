@@ -19,7 +19,7 @@ export async function renderMovies(moviePromises, isWatchlist = false) {
   for (let movie of movies) {
     movieSectionEl.innerHTML += `
     <div class="movies">
-      <aside>
+      <aside class="img-aside">
         <img class="poster" src='${movie.Poster}'>
       </aside>
 

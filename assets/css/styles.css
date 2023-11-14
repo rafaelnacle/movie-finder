@@ -303,3 +303,34 @@ p {
 .placeholder-empty-wrapper img {
   width: 18px;
 }
+
+
+@media screen and (max-width: 580px) {
+  .header-text-wrapper {
+    flex-direction: column;
+  }
+
+  .search-input {
+    width: 100% !important;
+  }
+
+  .movie-section {
+    width: auto;
+  }
+
+  .movies {
+    flex-direction: column;
+  }
+
+  .img-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .poster {
+    width: 150px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
