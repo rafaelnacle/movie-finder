@@ -145,8 +145,7 @@ function removeFromWatchList(movieId) {
     watchList = watchList.filter((id) => id !== movieId)
     localStorage.setItem('watchlist', JSON.stringify(watchList))
 
+    showCustomAlert('Movie removed from Watchlist!')
     displayWatchlist()
   }
 }
-
-
