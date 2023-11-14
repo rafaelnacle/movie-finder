@@ -1,4 +1,3 @@
-import config from './config.js';
 import { displayWatchlist } from './watchlist.js'
 
 const searchInput = document.getElementById('search-input')
@@ -63,7 +62,7 @@ export async function renderMovies(moviePromises, isWatchlist = false) {
 
 async function getMovies() {
   if (searchInput.value !== "") {
-    const res = await fetch(`https://www.omdbapi.com/?s=${searchInput.value}&type=movie&apikey=${config.API_KEY}`)
+    const res = await fetch(`https://www.omdbapi.com/?s=${searchInput.value}&type=movie&apikey=c6881473`)
     if (!res.ok) {
       throw Error('Oops, something went wrong!')
     }
@@ -96,7 +95,7 @@ function getMoviesList(data) {
   })
 
   const movieInfo = movieIdsArr.map(async (item) => {
-    const res = await fetch(`https://www.omdbapi.com/?i=${item}&type=movie&apikey=${config.API_KEY}`)
+    const res = await fetch(`https://www.omdbapi.com/?i=${item}&type=movie&apikey=c6881473`)
     const data = await res.json()
 
     return data

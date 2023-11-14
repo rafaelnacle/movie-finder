@@ -1,4 +1,3 @@
-import config from './config.js';
 import { renderMovies } from "./index.js"
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -11,7 +10,7 @@ export async function displayWatchlist() {
 
   if (watchlist.length > 0) {
     let watchlistMovies = await Promise.all(watchlist.map(async (movieId) => {
-      const res = await fetch(`https://www.omdbapi.com/?i=${movieId}&type=movie&apikey=${config.API_KEY}`)
+      const res = await fetch(`https://www.omdbapi.com/?i=${movieId}&type=movie&apikey=c6881473`)
       const data = await res.json()
 
       return data
